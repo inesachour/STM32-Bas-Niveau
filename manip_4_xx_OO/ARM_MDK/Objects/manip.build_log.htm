@@ -1,0 +1,68 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.35.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Emir DAMERGI, INSAT, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.35.0.2
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.35.0.2
+Dialog DLL:      DARMSTM.DLL V1.68.0.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.5.0
+Dialog DLL:      TCM.DLL V1.53.0.0
+ 
+<h2>Project:</h2>
+C:\Users\EMIR\Desktop\00_STD_LIB_GL3_Disco100_Nucleo103\STM32_Projects_VerMaster\STM32_NucleoF103_StdLib\manip_4_xx_OO\ARM_MDK\manip.uvprojx
+Project File Date:  12/02/2021
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'Target 1'
+Note: source file '..\main.cpp' - object file renamed from '.\Objects\main.o' to '.\Objects\main_1.o'.
+compiling core_cm3.c...
+assembling startup_stm32f10x_md.s...
+compiling stm32_wrapper_gpio.c...
+..\stm32_wrapper_gpio.c(139): warning:  #940-D: missing return statement at end of non-void function "xxgpio_read_out" 
+  }
+..\stm32_wrapper_gpio.c(156): warning:  #940-D: missing return statement at end of non-void function "xxget_gpio_out_mode" 
+  }
+..\stm32_wrapper_gpio.c(163): warning:  #940-D: missing return statement at end of non-void function "xxget_gpio_out_speed" 
+  }
+..\stm32_wrapper_gpio.c(153): warning:  #177-D: function "xxget_gpio_out_mode"  was declared but never referenced
+  static int xxget_gpio_out_mode (PinOutMode mode)
+..\stm32_wrapper_gpio.c(160): warning:  #177-D: function "xxget_gpio_out_speed"  was declared but never referenced
+  static int xxget_gpio_out_speed (PinSpeed speed)
+..\stm32_wrapper_gpio.c: 5 warnings, 0 errors
+compiling misc.c...
+compiling system_stm32f10x.c...
+compiling stm32f10x_gpio.c...
+compiling main.cpp...
+compiling stm32f10x_rcc.c...
+linking...
+Program Size: Code=1368 RO-data=272 RW-data=4 ZI-data=1636  
+".\Objects\manip.axf" - 0 Error(s), 5 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.2.0.pack
+                Keil.STM32F1xx_DFP.2.2.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\EMIR\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.2.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.36.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Ines Achour, HP Inc., LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.36.0.0
+Toolchain Path:  D:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.36.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.9.0
+Dialog DLL:      TCM.DLL V1.53.0.0
+ 
+<h2>Project:</h2>
+D:\Users\Ines\Documents\BasNiveau\Projets_Textes_TP\Projets_Textes_TP\STM32_NucleoF103_StdLib\manip_3-1_EXTI\ARM_MDK\manip.uvprojx
+Project File Date:  11/23/2021
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'D:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'Target 1'
+assembling startup_stm32f10x_md.s...
+compiling stm32f10x_rcc.c...
+compiling main.c...
+..\main.c(40): error:  #29: expected an expression
+       GPIO_EXTILineConfig(................, GPIO_PinSource.....);
+..\main.c(40): error:  #20: identifier "GPIO_PinSource" is undefined
+       GPIO_EXTILineConfig(................, GPIO_PinSource.....);
+..\main.c(40): error:  #18: expected a ")"
+       GPIO_EXTILineConfig(................, GPIO_PinSource.....);
+..\main.c(43): error:  #29: expected an expression
+     EXTI_InitStructure.EXTI_Line = .......;
+..\main.c(52): error:  #29: expected an expression
+     NVIC_InitStructure.NVIC_IRQChannel = ...........;
+..\main.c: 0 warnings, 5 errors
+compiling stm32f10x_exti.c...
+compiling stm32f10x_it.c...
+..\stm32f10x_it.c(155): error:  #18: expected a ")"
+  void EXTI......_IRQHandler(void)
+..\stm32f10x_it.c(155): error:  #79: expected a type specifier
+  void EXTI......_IRQHandler(void)
+..\stm32f10x_it.c(155): error:  #101: "EXTI_TypeDef" has already been declared in the current scope
+  void EXTI......_IRQHandler(void)
+..\stm32f10x_it.c(155): error:  #141-D: unnamed prototyped parameters not allowed when body is present
+  void EXTI......_IRQHandler(void)
+..\stm32f10x_it.c(155): error:  #130: expected a "{"
+  void EXTI......_IRQHandler(void)
+..\stm32f10x_it.c(164): error:  #29: expected an expression
+    EXTI_ClearITPendingBit(.......);
+..\stm32f10x_it.c: 0 warnings, 6 errors
+compiling core_cm3.c...
+compiling misc.c...
+compiling system_stm32f10x.c...
+compiling stm32f10x_gpio.c...
+".\Objects\manip.axf" - 11 Error(s), 0 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.3.0.pack
+                Keil.STM32F1xx_DFP.2.3.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\Ines\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Target not created.
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
